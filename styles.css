@@ -290,7 +290,6 @@ html[data-theme="light"] .theme-toggle .icon-moon {
 .lede {
   margin: 0 0 1.5rem;
   color: var(--muted);
-  max-width: 36rem;
 }
 
 .hero-kicker {
