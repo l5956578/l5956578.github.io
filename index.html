@@ -6,12 +6,18 @@
   <meta name="color-scheme" content="light dark" />
   <meta name="theme-color" content="#f6f6f7" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)" />
-  <meta name="description" content="Luis Silva — portfolio draft. Section copy pending." />
+  <meta name="description" content="Luis Silva — portfolio." />
   <title>Luis Silva</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" media="(prefers-color-scheme: light)" />
   <link rel="icon" href="favicon-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
   <script>
     (function () {
+      if (location.hostname !== "l5956578.github.io") {
+        var icons = document.querySelectorAll('link[rel="icon"]');
+        for (var i = 0; i < icons.length; i++) {
+          icons[i].setAttribute("href", icons[i].getAttribute("href").replace("favicon", "favicon-local"));
+        }
+      }
       document.documentElement.setAttribute(
         "data-theme",
         matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"
