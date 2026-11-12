@@ -1,3 +1,6 @@
 # Local tab icons only. The preview swaps to these. The published site does not use them.
 favicon-local.svg
 favicon-local-dark.svg
+
+# Older drafts. Local only. Not published.
+portfolio-archive/
